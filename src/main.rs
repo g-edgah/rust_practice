@@ -37,13 +37,13 @@ fn main() {
     print!("The day is ");
 
     match day  {
-        1 => print!("Monday"),
-        2 => print!("Tuesday"),
-        3 => print!("Wednesday"),
-        4 => print!("Thursday"),
-        5 => print!("Friday"),
-        6 | 7 => print!("Weekend"),
-        _ => print!("Invalid day")
+        1 => println!("Monday"),
+        2 => println!("Tuesday"),
+        3 => println!("Wednesday"),
+        4 => println!("Thursday"),
+        5 => println!("Friday"),
+        6 | 7 => println!("Weekend"),
+        _ => println!("Invalid day")
     }
 
     //storing the result of match in a variable
@@ -58,7 +58,7 @@ fn main() {
         6 | 7 => "Weekend",
         _ => "Invalid day"
     };
-    print!("The day is: {}", day_name);
+    println!("The day is {}", day_name);
 
 
     // loops
@@ -70,13 +70,47 @@ fn main() {
 
     loop {
         
-        println!("{}", a);
+        // println!("{}", a);
 
         if a == 10000 {
             break
         };
-        
+
         a += 1;
-    }
+
+       
+    };
+
+    println!("the loop stopped at {}", a);
+
+
+    // while loop
+    let mut count = 1;
+
+    while count <= 10000 {
+        count += 1;
+        println!("{}", count);
+
+        // skip a value
+        if count == 43 {
+            continue;
+        };
+
+        // conditionally stop the while loop
+        if count == 10000 {
+            break;
+        };
+    };
+
+    println!("count stopped at {}", count);
+
+    //skip a value
+
+    while count  <= 100000 {
+        count += 1;
+        println!("{}", count);
+
+        if 
+    };
 
 }
