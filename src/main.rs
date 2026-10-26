@@ -17,7 +17,7 @@ fn main() {
     println!("You owe me {} dollars {}", double, text);
 
     //type  casting 
-    let cast_double : f64 = 5.99
+    let cast_double : f64 = 5.99;
 
     // constants
     const PI: f64 = 3.14159;
@@ -31,6 +31,21 @@ fn main() {
         println!("Equal")
     }
 
+    // rust match
+    let day = 3;
+
+    print!("The day is ");
+
+    match day  {
+        1 => print!("Monday"),
+        2 => print!("Tuesday"),
+        3 => print!("Wednesday"),
+        4 => print!("Thursday"),
+        5 => print!("Friday"),
+        6 => print!("Saturday"),
+        7 => print!("Sunday"),
+        _ => print!("Invalid day")
+    }
 
 
 }
