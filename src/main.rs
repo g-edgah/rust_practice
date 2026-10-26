@@ -104,13 +104,41 @@ fn main() {
 
     println!("count stopped at {}", count);
 
-    //skip a value
 
-    while count  <= 100000 {
-        count += 1;
-        println!("{}", count);
+    // for loop
+    for i in 1..6 {
+        println!("i is: {}", i);
+    }
 
-        if 
-    };
+    // inclusive range
+    for i in 1..=6 {
+        println!("i is: {}", i);
+    }
 
+    //break and continue
+    for i in 1..=10 {
+        if i == 3 {
+            continue;
+        };
+
+        if i == 8 {
+            break;
+        };
+
+        println!("i is: {}", i);
+    }
 }
+
+
+// functions
+fn hello() {
+    println!("Hello from a function!");
+};
+
+hello();
+
+fn hello2(name: &str) {
+    println!("Hello, {}!", name);
+}
+
+hello2("Alice");
