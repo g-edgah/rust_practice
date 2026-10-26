@@ -1,3 +1,5 @@
+use std::io;
+
 fn main() {
 
     // variables
@@ -130,6 +132,7 @@ fn main() {
 
     hello();
     hellotwo("Bob");
+    input();
 }
 
 
@@ -139,8 +142,15 @@ fn hello() {
 }
 
 
-
+// function parameters
 fn hellotwo(name: &str) {
     println!("Hello, {}!", name);
 }
 
+//input 
+fn input() {
+    println!("Hello!");
+    let mut input = String::new(); 
+    io::stdin().read_line(&mut input).expect("Failed to read line");
+    println!("hi there, {}", input);  
+}
