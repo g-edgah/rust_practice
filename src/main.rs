@@ -22,4 +22,15 @@ fn main() {
     // constants
     const PI: f64 = 3.14159;
 
+    // if..else if...else
+    if 7 > 5 {
+        println!("True")
+    } else if 7 < 5 {
+        println!("False")
+    } else  {
+        println!("Equal")
+    }
+
+
+
 }
