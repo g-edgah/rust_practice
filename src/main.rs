@@ -19,5 +19,7 @@ fn main() {
     //type  casting 
     let cast_double : f64 = 5.99
 
+    // constants
+    const PI: f64 = 3.14159;
 
 }
