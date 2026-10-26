@@ -42,10 +42,41 @@ fn main() {
         3 => print!("Wednesday"),
         4 => print!("Thursday"),
         5 => print!("Friday"),
-        6 => print!("Saturday"),
-        7 => print!("Sunday"),
+        6 | 7 => print!("Weekend"),
         _ => print!("Invalid day")
     }
 
+    //storing the result of match in a variable
+    let day = 4;
+
+    let day_name = match day {
+        1 => "Monday",
+        2 => "Tuesday",
+        3 => "Wednesday",
+        4 => "Thursday",
+        5 => "Friday",
+        6 | 7 => "Weekend",
+        _ => "Invalid day"
+    };
+    print!("The day is: {}", day_name);
+
+
+    // loops
+    // loop {
+    //     println!("This will repeat forever!")
+    // }
+
+    let mut a = 1;
+
+    loop {
+        
+        println!("{}", a);
+
+        if a == 10000 {
+            break
+        };
+        
+        a += 1;
+    }
 
 }
