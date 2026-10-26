@@ -127,18 +127,20 @@ fn main() {
 
         println!("i is: {}", i);
     }
+
+    hello();
+    hellotwo("Bob");
 }
 
 
 // functions
 fn hello() {
     println!("Hello from a function!");
-};
+}
 
-hello();
 
-fn hello2(name: &str) {
+
+fn hellotwo(name: &str) {
     println!("Hello, {}!", name);
 }
 
-hello2("Alice");
